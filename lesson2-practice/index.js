@@ -48,5 +48,20 @@ const exercise1Result = getSumOfSquares(3);
 const exercise2Result = getSumOfCubes(3);
 // exerciseFive(7, 1, 3);
 
-const arr = createArrayFromUserInputs();
-console.log(arr);
+// const arr = createArrayFromUserInputs();
+
+function createTriangleC() {
+  for (let i = 0; i < 10; i++) {
+    let str = "";
+    for (let j = 0; j < 10; j++) {
+      if (j < i) {
+        str += " ";
+      } else {
+        str += "*";
+      }
+    }
+    console.log(str);
+  }
+}
+
+createTriangleC();
