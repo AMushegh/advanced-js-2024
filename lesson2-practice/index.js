@@ -50,6 +50,26 @@ const exercise2Result = getSumOfCubes(3);
 
 // const arr = createArrayFromUserInputs();
 
+function createTriangleA() {
+  for (let i = 0; i < 10; i++) {
+    let str = "";
+    for (let j = 0; j < i + 1; j++) {
+      str += "*";
+    }
+    console.log(str);
+  }
+}
+
+function createTriangleB() {
+  for (let i = 0; i < 10; i++) {
+    let str = "";
+    for (let j = 10; j > i; j--) {
+      str += "*";
+    }
+    console.log(str);
+  }
+}
+
 function createTriangleC() {
   for (let i = 0; i < 10; i++) {
     let str = "";
@@ -64,4 +84,33 @@ function createTriangleC() {
   }
 }
 
-createTriangleC();
+function createTriangleD() {
+  for (let i = 0; i < 10; ++i) {
+    let str = "";
+    for (let j = 0; j < 10; ++j) {
+      if (j < 10 - i - 1) {
+        str += " ";
+      } else {
+        str += "*";
+      }
+    }
+    console.log(str);
+  }
+}
+
+function createTriangleDVersion2() {
+  for (let i = 0; i < 10; ++i) {
+    let str = "";
+    for (let j = 10; j > 0; --j) {
+      if (j > i + 1) {
+        str += " ";
+      } else {
+        str += "*";
+      }
+    }
+    console.log(str);
+  }
+}
+
+createTriangleD();
+createTriangleDVersion2();
