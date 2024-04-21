@@ -111,17 +111,27 @@ console.log(sum / payments.length);
 //   },
 // };
 
-let res = {};
+let res1 = {};
+payments.forEach((payment) => {
+  res1[payment.studentId] ??= {
+    studentId: payment.studentId,
+    studentName: payment.studentName,
+    totalAmount: 0,
+  };
 
-payments.forEach((payment, i) => {
-  if (res[payment.studentId]) {
-    res[payment.studentId] = {
+  res1[payment.studentId].totalAmount += payment.payedAmount;
+});
+
+let res2 = {};
+payments.forEach((payment) => {
+  if (res2[payment.studentId]) {
+    res2[payment.studentId] = {
       studentId: payment.studentId,
       studentName: payment.studentName,
-      totalAmount: res[payment.studentId].totalAmount + payment.payedAmount,
+      totalAmount: res2[payment.studentId].totalAmount + payment.payedAmount,
     };
   } else {
-    res[payment.studentId] = {
+    res2[payment.studentId] = {
       studentId: payment.studentId,
       studentName: payment.studentName,
       totalAmount: payment.payedAmount,
@@ -129,4 +139,5 @@ payments.forEach((payment, i) => {
   }
 });
 
-console.log(Object.values(res));
+console.log(Object.values(res1));
+console.log(Object.values(res2));
