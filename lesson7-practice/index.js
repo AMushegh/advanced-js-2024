@@ -74,16 +74,6 @@ const evaluations = [
   },
 ];
 
-// let target = {
-//   1: {
-//     strudentName: "aunun",
-//     scores: [23, 343, 234],
-//   },
-//   3: {
-//     studentName: "qda",
-//   },
-// };
-
 const groupedByStudentId = evaluations.reduce((res, el) => {
   const { studentId, studentName, score } = el;
 
