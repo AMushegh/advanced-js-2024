@@ -1,0 +1,7 @@
+.text-with-line {
+  text-decoration: line-through;
+}
+
+* {
+  user-select: none;
+}
