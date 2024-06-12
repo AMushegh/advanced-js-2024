@@ -1,2 +1,6 @@
-console.log(1)
-console.log(1)
+class Git {
+
+    switchBranch(branch){
+        console.log('switched to branch: ', branch)
+    }
+}
