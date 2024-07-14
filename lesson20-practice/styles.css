@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.countries-list-container {
+  width: 80%;
+  margin: 2rem auto 0;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.countries-list {
+  list-style: none;
+  padding: 16px 24px;
+  border: 1px solid #d5d5d5;
+  border-radius: 16px;
+}
+
+.country-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.country-item-img-container {
+  width: 40px;
+}
+
+.country-item-img-container img {
+  width: 100%;
+}
