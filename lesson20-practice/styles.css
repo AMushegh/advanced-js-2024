@@ -10,7 +10,7 @@ body {
 
 .countries-list-container {
   width: 80%;
-  margin: 2rem auto 0;
+  margin: 2rem auto;
   background: #ffffff;
   border-radius: 16px;
 }
@@ -34,5 +34,10 @@ body {
 }
 
 .country-item-img-container img {
+  border: 0.5px solid;
   width: 100%;
+}
+
+.container-element {
+  width: 150px;
 }
